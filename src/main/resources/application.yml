@@ -1,0 +1,21 @@
+server:
+  port: 8080
+#name: suqinglin
+#age: 28
+#content: "name: ${name}, age: ${age}"
+#student:
+#  name: suqinglin
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+    async:
+      request-timeout:
+# datasource一定是spring节点下的，切不可写到外层了，不然找不到url
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.138/suqinglin?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: xyzh2018
+#  age: 28
